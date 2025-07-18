@@ -1,4 +1,4 @@
-package Threads;
+package threads;
 
 public class SampleProblem1 {
     public static void main(String[] args) {

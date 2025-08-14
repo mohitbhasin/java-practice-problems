@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+// Predicate functional interface has one abstract method called boolean Test(T t).
+// It evaluates the given input and return true or false.
+
+// Predicate<T> can take any object as its type.
+// Similarly, there are other predicates for wrapper classes
+// eg. - DoublePredicate, IntPredicate and LongPredicate
+// that take their respective data types as arguments.
 public class PredicateDemo {
     public static void main(String[] args) {
         List<Employee> employeeList = new ArrayList<>();
@@ -13,7 +20,7 @@ public class PredicateDemo {
         employeeList.add(new Employee("Tom", 12, 55));
 
         // defining predicate
-        Predicate<Employee> benefitsEligibilityPredicate = emp -> emp.monthsOfService>10;
+        Predicate<Employee> benefitsEligibilityPredicate = emp -> emp.monthsOfService > 10;
 
         for(Employee employee: employeeList) {
             System.out.println(employee.name + " is eligible for benefits or not? : " + isEligibleForBenefits(employee, benefitsEligibilityPredicate));

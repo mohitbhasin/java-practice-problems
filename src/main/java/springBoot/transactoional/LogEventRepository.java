@@ -2,6 +2,5 @@ package springBoot.transactoional;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface ProductRepository extends CrudRepository<Product, Integer> {
-
+public interface LogEventRepository extends CrudRepository<LogEvent, Integer> {
 }

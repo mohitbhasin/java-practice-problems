@@ -2,6 +2,7 @@ package springBoot.transactoional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
@@ -12,26 +13,24 @@ public class OrderService {
     @Autowired
     ProductService productService;
 
+    @Autowired
+    LogEventService logEventService;
+
     @Transactional
     public Product placeOrder(Orders order) {
+        // save order details to the db.
+        // Without @Transactional, order saved to db will not be rolled back,
+        // if the product id doesn't exist and throws an error.
         ordersRepository.save(order);
 
-        Product product;
-        try {
-            product = productService.getProduct(order.productId);
-        } catch (IllegalArgumentException e) {
-            throw e;
-        }
+        Product product=productService.getProduct(order.productId);
 
-        if(product.quantity<order.quantity) {
-            throw new IllegalArgumentException("Not enough quantity for the product");
-        }
+        // logSaveEvent will not be rolled back if updateProductQuantity fails.
+        // logSaveEvent() has transactional.not_supported.
+        logEventService.logSaveEvent(order, product);
 
-        product.quantity-=order.quantity;
-
-        productService.saveProduct(product);
-
-        ordersRepository.save(order);
+        // Save order is rolled back if there is not enough quantity.
+        productService.updateProductQuantity(product, order);
 
         return product;
     }

@@ -3,7 +3,6 @@ package springBoot.transactoional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -15,10 +14,8 @@ public class AppController {
     OrderService orderService;
 
     @PostMapping("/order")
-    @ResponseBody
     public Product placeOrder(@RequestBody Orders orders) {
-        System.out.println("placeOrder post mapping: "+orders);
-        System.out.println(orders.id+" productId: "+orders.productId+" quantity: "+ orders.quantity);
+        System.out.println("ProductId: "+orders.productId+" quantity: "+ orders.quantity);
         return updateProduct(orders);
     }
 

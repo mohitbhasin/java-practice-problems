@@ -7,12 +7,18 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Orders {
+    // If the next id is generated and assigned
+    // and later the transaction rollback,
+    // the id will not be used for the next order.
+    // This is a normal behavior.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     int productId;
     int quantity;
 
+    // getter and setters are required for repository to set values correctly.
+    // Without them, all the class variable take default values(0 for int).
     public int getId() {
         return id;
     }

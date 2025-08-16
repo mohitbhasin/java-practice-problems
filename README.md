@@ -13,4 +13,5 @@ Some of the components include:
 - Anonymous classes
 - Static fields
 - Small projects (Slam-dunk and Doctor-on-call)
+- Spring concepts
 - and more

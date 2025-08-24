@@ -13,6 +13,8 @@ public class Average {
 
         System.out.println(avg);
         double squareAvg = list.stream().map(a -> a*a).mapToInt(a -> a).average().getAsDouble();
+        double squareAvg2 = list.stream().mapToInt(a -> a*a).average().getAsDouble();
         System.out.println(squareAvg);
+        System.out.println(squareAvg2);
     }
 }

@@ -1,4 +1,4 @@
-package functionalInterfaces.supplier;
+package lambdaExpression.functionalInterfaces.supplier;
 
 import java.util.function.IntSupplier;
 

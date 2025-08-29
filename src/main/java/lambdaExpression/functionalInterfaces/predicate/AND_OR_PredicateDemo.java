@@ -1,4 +1,4 @@
-package functionalInterfaces.predicate;
+package lambdaExpression.functionalInterfaces.predicate;
 
 import java.util.ArrayList;
 import java.util.List;

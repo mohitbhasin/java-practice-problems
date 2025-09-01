@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
-    int id;
-    String name;
-    String department;
-    int dep_id;
-    double salary;
+    public int id;
+    public String name;
+    public String department;
+    public int dep_id;
+    public double salary;
 
     public Employee(int id, String name, String department, int dep_id, double salary) {
         this.id = id;

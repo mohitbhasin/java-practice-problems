@@ -39,7 +39,7 @@ public class Employee {
         employeeList.add(new Employee(6,"Brady","OPERATIONS", 201, 2000));
         employeeList.add(new Employee(7,"Hanna","OPERATIONS", 201, 3000));
         employeeList.add(new Employee(8,"Leonard","HR", 215, 4000));
-        employeeList.add(new Employee(9,"Black","TECH", 205, 1000));
+        employeeList.add(new Employee(9,"Jack","TECH", 205, 1000));
         employeeList.add(new Employee(10,"McCall","FINANCE", 208, 2000));
         employeeList.add(new Employee(11,"Douglas","FINANCE", 208, 3000));
         employeeList.add(new Employee(12,"Rosario","FINANCE", 208, 4000));

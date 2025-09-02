@@ -2,7 +2,7 @@ package lambdaExpression;
 // Instead of creating separate classes for each behavior,
 // lambda expression (denoted by ->) allows create behavior inline.
 // Lambdas are wrapped inside new classes which are created during runtime.
-public class LambdaUsage {
+public class BuildingUpToLambda {
     public static void main(String[] args) {
         // Using typical OOP to create behavior and call playAlarm()
         Clock clock = new Clock();

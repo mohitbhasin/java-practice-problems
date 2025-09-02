@@ -5,10 +5,18 @@ package lambdaExpression.functionalInterfaces.supplier;
 // Similarly, there are DoubleSupplier, IntSupplier, LongSupplier and BooleanSupplier
 // that produces result of their respective type
 // Supplier functional interface is Lazy in nature, while consumer is not.
+// Lazy means the object creation of value calculation is
+// deferred until it is first needed.
+
+// Lazy is a behavioral design pattern and not a property.
+// A class or interface cannot be identified as lazy by just looking at it.
+// Since the get() of Supplier does not have any arguments
+// and the code inside get() isn't executed until it is called explicitly,
+// making it lazy.
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-//
+
 public class SupplierDemo {
     public static void main(String[] args) {
         Supplier<Employee> supplier = () -> {

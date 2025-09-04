@@ -1,6 +1,4 @@
 package lambdaExpression.functionalInterfaces.unaryOperator;
-
-import jakarta.persistence.criteria.CriteriaBuilder;
 import stream.Employee;
 
 import java.util.function.Function;

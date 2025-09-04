@@ -6,6 +6,8 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+// groupingBy() is the method of Collectors class.
+// It is used with terminal operation collect().
 // There are three groupingBy functions available:
 // groupingBy(function)
 // groupingBy(function, collector)

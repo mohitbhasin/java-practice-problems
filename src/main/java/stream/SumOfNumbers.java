@@ -9,9 +9,12 @@ public class SumOfNumbers {
         printSumOfNumbers();
     }
 
+    // Using the reduce(), which is a terminal operation.
+    // It combines all elements into a single result by applying binary operation.
     public static void printSumOfNumbers() {
         List<Integer> nums = Arrays.asList(4,2,6,7,1,8,5,9,3);
-        Optional<Integer> sum = nums.stream().reduce((a, b) -> a+b);
-        System.out.println(sum.get());
+        // Here it works like a+=b, where b is the next element in the stream.
+        int sum = nums.stream().reduce((a, b) -> a+b).get();
+        System.out.println(sum);
     }
 }

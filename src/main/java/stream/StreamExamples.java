@@ -1,15 +1,12 @@
 package stream;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
-public class SteamExamples {
+public class StreamExamples {
     public static void main(String[] args) {
         // Intermediate operations: filter(), map(), sorted()
-        // Terminal operations: toList(), forEach(),
+        // Terminal operations: toList(), forEach(), collect()
         List<String> list = Arrays.asList("USA", "India", "Canada", "Australia", "UK", "Africa");
         List<String> output1 = list.stream().filter(a -> a.startsWith("U")).toList();
         System.out.println(output1);

@@ -1,4 +1,4 @@
-package functionalInterfaces.predicate;
+package lambdaExpression.functionalInterfaces.predicate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 // Predicate functional interface has one abstract method called boolean Test(T t).
 // It evaluates the given input and return true or false.
 
-// Predicate<T> can take any object as its type.
+// Predicate<T> can take any object as its type, evaluates its value and return true or false.
 // Similarly, there are other predicates for wrapper classes
 // eg. - DoublePredicate, IntPredicate and LongPredicate
 // that take their respective data types as arguments.

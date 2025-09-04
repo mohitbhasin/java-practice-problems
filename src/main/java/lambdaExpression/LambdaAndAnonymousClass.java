@@ -1,6 +1,8 @@
 package lambdaExpression;
 // Lambda expression is used to pass the definition of a function as a parameter,
 // when the parameter is a functional interface that corresponds tp the function.
+// Therefore, the return type of lambda expression depends on
+// the abstract method of the functional interface called.
 
 // The parameter of a function must be a type of functional interface.
 // Lambda expression is an improvement over anonymous class

@@ -23,6 +23,8 @@ public class AbstractUserExample extends AbstractUser {
 }
 
 // Abstract class can implement other interfaces.
+// Interface methods are not required to be implemented in the abstract class.
+// the can be implemented in child class as well.
 abstract class AbstractUser implements UserProperties {
     // Abstract class can have constructors and static variables
     public AbstractUser() {

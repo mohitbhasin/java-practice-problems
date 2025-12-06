@@ -29,6 +29,16 @@ public class Employee {
                 '}';
     }
 
+    public static List<Employee> getEmployeesSublist() {
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(new Employee(1,"Warner","OPERATIONS", 201, 1000));
+        employeeList.add(new Employee(2,"George","FINANCE", 208, 2000));
+        employeeList.add(new Employee(3,"Byrd","OPERATIONS", 201, 3000));
+        employeeList.add(new Employee(4,"Sampson","FINANCE", 208, 4000));
+        employeeList.add(new Employee(5,"Snow","HR", 215, 1000));
+        return employeeList;
+    }
+
     public static List<Employee> getEmployees() {
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(new Employee(1,"Warner","OPERATIONS", 201, 1000));

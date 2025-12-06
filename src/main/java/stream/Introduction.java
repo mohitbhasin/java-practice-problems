@@ -25,8 +25,7 @@ public class Introduction{
         // Stream of objects
         Stream<Object> differentTypes = Stream.of(2, "Star", Employee.getEmployees());
         differentTypes.forEach(val -> System.out.print(val+" "));
-
-
+        System.out.println("\n");
     }
 
     public void variableLengthArgument(int... args) {

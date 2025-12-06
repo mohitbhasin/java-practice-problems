@@ -6,7 +6,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 // Consumers are functional interfaces that take a parameter and do not return anything.
-// They have a abstract method void accept(T t)
+// They have an abstract method void accept(T t)
 // Some examples of consumer interfaces are Consumer<T>, DoubleConsumer, IntConsumer
 // LongConsumer, BiConsumer<T, U> etc
 public class ConsumerDemo {

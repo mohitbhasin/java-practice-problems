@@ -33,6 +33,7 @@ public class MethodReference {
                 .map(Person::new)
                 .collect(Collectors.toList());
         System.out.println(personList);
+        System.out.println();
     }
 
     static class Temp {

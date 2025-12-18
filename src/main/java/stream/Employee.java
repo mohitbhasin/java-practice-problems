@@ -2,6 +2,7 @@ package stream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Employee {
     public int id;
@@ -62,5 +63,9 @@ public class Employee {
         employeeList.add(new Employee(19,"Green","OPERATIONS", 201, 3000));
         employeeList.add(new Employee(20,"Nichols","FINANCE", 208, 4000));
         return employeeList;
+    }
+
+    public Optional<Double> getSalary() {
+        return Optional.of(salary);
     }
 }

@@ -12,5 +12,15 @@ public class Main_Stream {
         Mapping.main(null);
         System.out.println("---------Method Reference---------");
         MethodReference.main(null);
+        System.out.println("---------Optional Object---------");
+        OptionalObject.main(null);
+        System.out.println("---------Slicing Operations---------");
+        SlicingOperations.main(null);
+        System.out.println("---------Matching Operations---------");
+        MatchingOperations.main(null);
+        System.out.println("---------Finding Operations---------");
+        FindingOperations.main(null);
+        System.out.println("---------Mutable Reduction---------");
+        MutableReduction.main(null);
     }
 }

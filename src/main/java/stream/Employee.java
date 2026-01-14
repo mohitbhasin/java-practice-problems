@@ -9,9 +9,9 @@ public class Employee {
     public String name;
     public String department;
     public int dep_id;
-    public double salary;
+    public int salary;
 
-    public Employee(int id, String name, String department, int dep_id, double salary) {
+    public Employee(int id, String name, String department, int dep_id, int salary) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -65,7 +65,11 @@ public class Employee {
         return employeeList;
     }
 
-    public Optional<Double> getSalary() {
+    public Optional<Integer> getSalary() {
         return Optional.of(salary);
+    }
+
+    public double getSal() {
+        return salary;
     }
 }

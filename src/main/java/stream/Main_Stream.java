@@ -20,7 +20,17 @@ public class Main_Stream {
         MatchingOperations.main(null);
         System.out.println("---------Finding Operations---------");
         FindingOperations.main(null);
-        System.out.println("---------Mutable Reduction---------");
-        MutableReduction.main(null);
+        System.out.println("---------Immutable Reduction---------");
+        ImmutableReduction.main(null);
+        System.out.println("---------Collectors: Mutable Reductions---------");
+        MutableReductionsUsingCollectors.main(null);
+        System.out.println("---------Collectors: Aggregation Operations---------");
+        AggregationOperations.main(null);
+        System.out.println("---------Collectors: Grouping By---------");
+        GroupingByOperations.main(null);
+        System.out.println("---------Parallel Streams---------");
+        ParallelStreams.main(null);
+        System.out.println("---------Lazy Evaluation---------");
+        LazyEvaluation.main(null);
     }
 }

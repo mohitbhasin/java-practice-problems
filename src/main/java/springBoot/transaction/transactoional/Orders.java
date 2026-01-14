@@ -1,4 +1,4 @@
-package springBoot.transactoional;
+package springBoot.transaction.transactoional;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

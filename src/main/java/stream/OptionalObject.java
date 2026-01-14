@@ -43,7 +43,7 @@ public class OptionalObject {
         // Empty optional - It will contain a null object.
         Optional<Employee> emptyEmp = Optional.empty();
 
-        Employee employee = new Employee(1, "Bob", "HR", 104, 1000.0);
+        Employee employee = new Employee(1, "Bob", "HR", 104, 1000);
         // The optional.of() is used to create an Optional of type T, which cannot be null.
         Optional<Employee> nonEmptyOptional = Optional.of(employee);
         System.out.println("Optional.of() with non-null object: "+nonEmptyOptional);

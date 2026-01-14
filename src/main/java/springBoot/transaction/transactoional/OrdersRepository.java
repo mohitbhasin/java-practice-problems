@@ -1,4 +1,4 @@
-package springBoot.transactoional;
+package springBoot.transaction.transactoional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

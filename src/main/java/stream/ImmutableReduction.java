@@ -13,7 +13,7 @@ import java.util.List;
 // Combine - It's a function that combines the partial result when:
 //      Reduction is parallelized
 //      There's a mismatch b/w types of accumulator arguments and its implementations.
-public class MutableReduction {
+public class ImmutableReduction {
     public static void main(String[] args) {
         reduceOperation_i();
         reduceOperation_ii();

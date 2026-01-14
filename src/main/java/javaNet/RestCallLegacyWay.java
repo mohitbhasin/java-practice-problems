@@ -6,15 +6,15 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class RestCall {
+public class RestCallLegacyWay {
     public static void main(String[] args) {
-        httpFundamental();
+        legacyWay();
     }
 
-    public static void httpFundamental() {
+    public static void legacyWay() {
         try {
             // Create url
-            URL url = new URL("http://google.com");
+            URL url = new URL("https://httpbin.org/get");
 
             // Create HTTPURLConnection
             // Just a representation of the connection,
@@ -32,7 +32,7 @@ public class RestCall {
             // When the next call to getInputStream() is happening,
             // a new call to server will not be made.
             // The previous call's response will be buffered.
-            // The call to the server will be made only one,
+            // The call to the server will be made only once,
             // regardless of other methods for the url.
             int responseCode = urlConnection.getResponseCode();
             System.out.println(responseCode);
@@ -54,4 +54,6 @@ public class RestCall {
             throw new RuntimeException(e);
         }
     }
+
+
 }

@@ -1,6 +1,4 @@
-package threads;
-
-import accessmodifiers.ProtectedMembers;
+package accessmodifiers;
 
 public class ProtectedMemberTest {
     public static void main(String[] args) {

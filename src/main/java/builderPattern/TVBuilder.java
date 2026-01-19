@@ -37,7 +37,7 @@ public class TVBuilder {
         }
     }
 
-    public TVBuilder(Builder builder) {
+    private TVBuilder(Builder builder) {
         this.pixelCount = builder.pixelCount;
         this.speakerCount = builder.speakerCount;
         this.channelCount = builder.channelCount;

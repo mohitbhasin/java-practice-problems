@@ -2,15 +2,16 @@ package stream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Employee {
     public int id;
     public String name;
     public String department;
     public int dep_id;
-    public double salary;
+    public int salary;
 
-    public Employee(int id, String name, String department, int dep_id, double salary) {
+    public Employee(int id, String name, String department, int dep_id, int salary) {
         this.id = id;
         this.name = name;
         this.department = department;
@@ -27,6 +28,16 @@ public class Employee {
                 ", dep_id=" + dep_id +
                 ", salary=" + salary +
                 '}';
+    }
+
+    public static List<Employee> getEmployeesSublist() {
+        List<Employee> employeeList = new ArrayList<>();
+        employeeList.add(new Employee(1,"Warner","OPERATIONS", 201, 1000));
+        employeeList.add(new Employee(2,"George","FINANCE", 208, 2000));
+        employeeList.add(new Employee(3,"Byrd","OPERATIONS", 201, 3000));
+        employeeList.add(new Employee(4,"Sampson","FINANCE", 208, 4000));
+        employeeList.add(new Employee(5,"Snow","HR", 215, 1000));
+        return employeeList;
     }
 
     public static List<Employee> getEmployees() {
@@ -52,5 +63,13 @@ public class Employee {
         employeeList.add(new Employee(19,"Green","OPERATIONS", 201, 3000));
         employeeList.add(new Employee(20,"Nichols","FINANCE", 208, 4000));
         return employeeList;
+    }
+
+    public Optional<Integer> getSalary() {
+        return Optional.of(salary);
+    }
+
+    public double getSal() {
+        return salary;
     }
 }

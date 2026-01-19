@@ -1,4 +1,4 @@
-package springBoot.transactoional;
+package springBoot.transaction.transactoional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
